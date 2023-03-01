@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AthenaClient">
+        <activity
+            android:name="com.example.athenaclient.Home"
+            android:exported="false" />
+        <activity
+            android:name="com.example.athenaclient.screens.Invoice"
+            android:exported="false" />
+        <activity
+            android:name=".screens.Checkout"
+            android:exported="false" />
+        <activity
+            android:name=".screens.SelectDate"
+            android:exported="false" />
+        <activity
+            android:name=".screens.SelectService"
+            android:exported="false" />
+        <activity
+            android:name=".auth.Register"
+            android:exported="false" />
+        <activity
+            android:name=".screens.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".screens.BookBranch"
+            android:exported="false" />
+        <activity
+            android:name=".auth.Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

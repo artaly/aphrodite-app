@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBeige"
+    tools:context=".screens.SelectService">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-122dp"
+        tools:layout_editor_absoluteY="360dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:text="MY APPOINTMENTS"
+                android:textColor="@color/appWoody"
+                android:textSize="25sp"
+                app:fontFamily="@font/gilroy_bold" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+
+            android:layout_marginEnd="25dp"
+            app:cardBackgroundColor="@color/appOats"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="25dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblBranch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Branch Name"
+                    android:textColor="@color/appWoody"
+                    android:textSize="25sp"
+                    app:fontFamily="@font/gilroy_semi_bold" />
+
+                <TextView
+                    android:id="@+id/serviceList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Service 1"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    app:fontFamily="@font/gilroy_semi_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date: "
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/gilroy_semi_bold" />
+
+                    <TextView
+                        android:id="@+id/txtDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MM/DD/YYYY"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/gilroy_semi_bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time: "
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/gilroy_semi_bold" />
+
+                    <TextView
+                        android:id="@+id/txtTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="00:00 AM"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/gilroy_semi_bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount: "
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/gilroy_semi_bold" />
+
+                    <TextView
+                        android:id="@+id/lblCost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0 PHP"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/gilroy_semi_bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblCancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Cancel"
+                        android:textColor="@color/appWoody"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/gilroy_semi_bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/lblResched"
+                        android:layout_marginStart="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Reschedule"
+                        android:textColor="@color/appWoody"
+                        android:textSize="20sp"
+                        app:fontFamily="@font/gilroy_semi_bold"
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round_corner"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu" />
+</RelativeLayout>

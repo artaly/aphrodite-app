@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="appCream">#F6F6F4</color>
+    <color name="appDarkBlue">#74C2DC</color>
+    <color name="appLightBlue">#E6F5F9</color>
+    <color name="appLightPink">#FDD4D7</color>
+    <color name="appDarkPink">#F89398</color>
+
+    <color name="appLightGray">#F6F6F4</color>
+    <color name="cardBackgroundCream">#FEFEFE</color>
+
+    <color name="appHoney">#FECE79</color>
+    <color name="appWoody">#A25B5B</color>
+    <color name="appOlive">#7FB77E</color>
+    <color name="appOats">#F7F6DC</color>
+    <color name="appSage">#CC9C75</color>
+    <color name="appBeige">#F8EDE3</color>>
+</resources>

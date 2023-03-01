@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBeige"
+    tools:context=".screens.SelectService">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="35dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtCheckout"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/appWoody"
+            android:textSize="25sp"
+            app:fontFamily="@font/gilroy_semi_bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="18dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llBottomView"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:layout_below="@id/txtCheckout"
+            app:cardBackgroundColor="@color/appOats"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbBranch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Branch: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:fontFamily="@font/gilroy_semi_bold" />
+
+                    <TextView
+                        android:id="@+id/txtBranch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Branch Name"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:fontFamily="@font/gilroy_semi_bold" />
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lblDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date: "
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:fontFamily="@font/gilroy_semi_bold" />
+
+                        <TextView
+                            android:id="@+id/txtDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:fontFamily="@font/gilroy_semi_bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                        android:id="@+id/lblTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time: "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        app:fontFamily="@font/gilroy_semi_bold" />
+
+                        <TextView
+                            android:id="@+id/txtTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            app:fontFamily="@font/gilroy_semi_bold" />
+                    </LinearLayout>
+                <TextView
+                    android:id="@+id/txtService"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selected Services"
+                    android:textColor="@color/appWoody"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    app:fontFamily="@font/gilroy_semi_bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@color/appLightPink"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/serviceRecycler"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/llBottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/appOats"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblTotalFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total: "
+                    android:textColor="@color/appWoody"
+                    android:textSize="25sp"
+                    app:fontFamily="@font/gilroy_semi_bold" />
+                <TextView
+                    android:id="@+id/txtTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="end"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    app:fontFamily="@font/gilroy_semi_bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <Button
+            app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent"
+            android:id="@+id/btnConfirm"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/appDarkPink"
+            android:letterSpacing="0"
+            android:radius="16dp"
+            android:textSize="20sp"
+            app:fontFamily="@font/inter_semibold"
+            android:text="CONFIRM BOOKING" />
+    </LinearLayout>
+
+
+</RelativeLayout>

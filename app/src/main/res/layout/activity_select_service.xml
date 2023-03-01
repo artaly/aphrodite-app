@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBeige"
+    tools:context=".screens.SelectService">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnProceed"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/choose_service"
+            android:textColor="@color/appWoody"
+            android:textSize="25sp"
+            app:fontFamily="@font/gilroy_semi_bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/serviceSearchBar"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/search_outline"
+                android:hint="@string/search_service"
+                android:inputType="textPersonName"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:textSize="15sp"
+                app:fontFamily="@font/gilroy_regular" />
+
+            <ImageButton
+                android:id="@+id/serviceSearchButton"
+                android:layout_width="10dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle"
+                android:padding="6dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/search" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/serviceRecycler"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent"
+        android:id="@+id/btnProceed"
+        android:layout_marginTop="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/appOlive"
+        android:radius="24dp"
+        android:layout_marginBottom="6dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="28dp"
+        app:fontFamily="@font/inter_semibold"
+        android:text="PROCEED"
+        android:textSize="18sp"
+        android:textColor="@color/appOats" />
+
+</RelativeLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBeige"
+    tools:context=".screens.SelectService">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-122dp"
+        tools:layout_editor_absoluteY="360dp">
+
+        <TextView
+            android:id="@+id/txtService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/choose_date"
+            android:textColor="@color/appWoody"
+            android:textSize="25sp"
+            app:fontFamily="@font/gilroy_semi_bold" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/progressBar" />
+
+        <Button
+            android:id="@+id/btnSetDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:backgroundTint="@color/appOlive"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/choose_date"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:fontFamily="@font/gilroy_semi_bold"
+            android:gravity="center"
+            android:text="Chosen date"/>
+
+        <TextView
+            android:id="@+id/lblChosenDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:textSize="23sp"
+            app:fontFamily="@font/gilroy_semi_bold"
+            android:gravity="center"
+            android:text="MM/DD/YY"/>
+
+            <TextView
+                android:id="@+id/lblSelectDateNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/appOlive"
+                android:layout_marginBottom="20dp"
+                android:textSize="14sp"
+                app:fontFamily="@font/gilroy_semi_bold"
+                android:gravity="center"
+                android:text="Select new date"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/txtChooseTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Choose time"
+            android:textColor="@color/appWoody"
+            android:textSize="25sp"
+            app:fontFamily="@font/gilroy_semi_bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Spinner
+            android:id="@+id/time_spinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/available_time" /></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblTime"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Chosen time"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            app:fontFamily="@font/gilroy_semi_bold" />
+
+        <TextView
+            android:id="@+id/lblChosenTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:textSize="23sp"
+            app:fontFamily="@font/gilroy_semi_bold"
+            android:gravity="center"
+            android:text="00:00 AM"/>
+
+        <TextView
+            android:id="@+id/lblSelectTimeNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/appOlive"
+            android:layout_marginBottom="20dp"
+            android:textSize="14sp"
+            app:fontFamily="@font/gilroy_semi_bold"
+            android:gravity="center"
+            android:text="Select new time"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_marginTop="14dp"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/appDarkPink"
+                android:letterSpacing="0"
+                android:radius="90dp"
+                app:fontFamily="@font/inter_semibold"
+                android:text="Continue" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

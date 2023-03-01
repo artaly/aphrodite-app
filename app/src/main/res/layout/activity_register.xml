@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registration_bg"
+    tools:context=".auth.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/lblRegister"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register Now"
+                    android:textColor="@color/appCream"
+                    android:textSize="33dp"
+                    app:fontFamily="@font/inter_extrabold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/imgEmail"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_email" />
+
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:textColorHint="@color/appCream"
+                    android:inputType="textPersonName"
+                    app:fontFamily="@font/inter_semibold" />
+                <!--                    android:textColor="@color/gray"-->
+                <!--                    android:backgroundTint="@color/blue"-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/imgPassword"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_pword" />
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_marginLeft="15dp"
+                    android:hint="Password"
+                    android:textColorHint="@color/appCream"
+                    app:fontFamily="@font/inter_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/lblForgot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/appOlive"
+                    android:textSize="14dp"
+                    app:fontFamily="@font/inter_semibold" />
+            </LinearLayout>
+
+            <Button
+                app:shapeAppearance="@style/ShapeAppearance.App.SmallComponent"
+                android:id="@+id/btnLogin"
+                android:layout_marginTop="14dp"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/appDarkPink"
+                android:letterSpacing="0"
+                android:radius="90dp"
+                app:fontFamily="@font/inter_semibold"
+                android:text="Register" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblGoBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go back to"
+                    android:textSize="14dp"
+                    android:textColor="@color/appCream"
+                    android:layout_marginRight="3dp"
+                    app:fontFamily="@font/inter_semibold" />
+
+                <TextView
+                    android:id="@+id/lblBackLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="login screen"
+                    android:textColor="@color/appOlive"
+                    android:textSize="14dp"
+                    app:fontFamily="@font/inter_semibold" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
